@@ -12,7 +12,7 @@ const defaultFormFields = {
 };
 
 
-const SignUpForm = () => {
+const SignUpFormComponent = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const {displayName, email, password, confirmPassword} = formFields;
 
@@ -40,7 +40,6 @@ const SignUpForm = () => {
         console.log('user creation encountered an error', error);
       }
     }
-
   };
 
   const handleChange = (event) => {
@@ -90,4 +89,4 @@ const SignUpForm = () => {
   )
 };
 
-export default SignUpForm;
+export default SignUpFormComponent;
